@@ -1,0 +1,35 @@
+body {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 400px;
+}
+
+button {
+  width: 200px;
+  background: #fafafa;
+  border: 0px;
+  font-size: 15px;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 2px 3px #00000033;
+  font-weight: 600;
+  color: #5f5f5f;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 2px 4px #00000070;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 350px;
+  }
+}

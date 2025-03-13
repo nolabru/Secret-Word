@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #218380;
+  --secondary-color: #5f5f5f;
+  --border-color: rgba(0, 0, 0, 0.075);
+  --shadow-color: rgba(95, 95, 95, 0.089);
+  --background-color: #fff;
+  --highlight-light: #5f5f5f93;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.game h2 {
+  color: var(--primary-color);
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.points span {
+  color: var(--secondary-color);
+  font-size: 15px;
+}
+
+.tip {
+  color: var(--secondary-color);
+}
+
+.tip span {
+  color: var(--primary-color);
+  margin-left: 8px;
+}
+
+.guesses {
+  color: var(--highlight-light);
+  font-size: 15px;
+}
+
+.guesses span {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.wordContainer {
+  border: 1px solid var(--border-color);
+  display: flex;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 5px var(--shadow-color);
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.letter,
+.blankSquare {
+  font-size: 70px;
+  color: var(--primary-color);
+  line-height: 1.5;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 2px 5px var(--shadow-color);
+  border-radius: 15px;
+  margin: 2.5px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letterContainer p {
+  color: var(--highlight-light);
+  margin: 40px 0;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.letterContainer input {
+  font-size: 40px;
+  line-height: 1.5;
+  width: 50px;
+  height: 55px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 2px 5px var(--shadow-color);
+  border-radius: 15px;
+  margin: 2.5px;
+  color: var(--primary-color);
+  text-align: center;
+  text-transform: uppercase;
+  outline: 0;
+}
+
+.wrongLettersContainer {
+  margin-top: 40px;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 2px 5px var(--shadow-color);
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.wrongLettersContainer p {
+  font-size: 18px;
+  margin: 0;
+  color: var(--highlight-light);
+}
+
+.wrongLettersContainer span {
+  background: var(--background-color);
+  margin: 10px 2px;
+  display: inline-block;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 2px 5px var(--shadow-color);
+  border-radius: 10px;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .game {
+    padding: 30px;
+  }
+
+  .letter,
+  .blankSquare {
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .letterContainer input {
+    font-size: 30px;
+    width: 40px;
+    height: 45px;
+  }
+
+  .wrongLettersContainer {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 441px) {
+  .game {
+    padding: 20px;
+  }
+
+  .letter,
+  .blankSquare {
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+  }
+}
